@@ -19,7 +19,7 @@ body {
     background: var(--cultured);
 }
 
-header, section {
+header, section, footer {
     padding-left: 7rem;
     padding-right: 7rem;
 }
@@ -140,4 +140,15 @@ header nav ul li a {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* || Footer */
+
+footer {
+    position: absolute;
+    background: var(--onyx);
+    height: 6rem;
+    text-align: center;
+    width: 100%;
+    color: #999999
 }
