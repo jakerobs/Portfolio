@@ -19,7 +19,7 @@ body {
     background: var(--cultured);
 }
 
-header, section, .wrapper {
+header, section {
     padding-left: 7rem;
     padding-right: 7rem;
 }
