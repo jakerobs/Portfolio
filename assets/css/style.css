@@ -15,6 +15,11 @@
 --paradise-pink: #d14d60; 
 }
 
+@font-face {
+    font-family: 'Novar';
+    src:  url('.assets/fonts/novar.ttf')
+  }
+
 body {
     background: var(--cultured);
     color: var(--quick-silver);
