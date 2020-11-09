@@ -126,8 +126,9 @@ header nav ul li a {
     letter-spacing: 2px;
 }
 
-.home h2 span {
-    font-weight: 900;
+.bold {
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 
 /* || Portfolio Grid Section */
@@ -162,9 +163,24 @@ header nav ul li a {
 
 /* || About */
 
-.about-content {
+.about {
     padding-left: 5rem;
     padding-right: 5rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headshot {
+    max-width:100%; 
+    height:auto;
+    padding:5% 5% 0 0;
+}
+
+.about-text {
+    padding: 5% 0 0 5%;
 }
 
 /* || Contact */
