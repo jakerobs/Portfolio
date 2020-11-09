@@ -144,7 +144,7 @@ header nav ul li a {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(4, 200px);
     grid-gap: 1em;
     justify-items: center;
     grid-auto-flow: dense;
@@ -154,6 +154,9 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    line-height: 0;
+    overflow: hidden;
 }
 
 .grid-photo {
@@ -168,6 +171,46 @@ header nav ul li a {
     grid-column-start: 1;
     grid-column-end: 4;
 }
+   
+.img-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    /* typographic styles */
+    color: var(--cultured);
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Transat;
+    background: rgba(63, 130, 150, 0.4);
+   
+    /* position the text centrally*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+    z-index: 1;
+}
+
+.portfolio-grid-item:hover .img-title {
+    opacity: 1;
+}
+
+.grid-photo {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.05);
+  }
+   
+  .portfolio-grid-item:hover .grid-photo {
+    filter: blur(2px);
+  }
+
+
 
 /* || About */
 
